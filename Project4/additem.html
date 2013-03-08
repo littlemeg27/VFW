@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<!--Brenna Pavlinchak-->
+<!--VFW 1210-->
+<!--Project One-->
+<!--This is the first project for VFW I am making a form and the starting page-->
+
+<!--HTMLTAG-->
+
+	<html>
+		<head>
+			<meta charset= "utf-8"/>
+			<meta name="description" content= "Raven's Dog Grooming"/>
+			<meta name= "keywords" 	 content= "Raven, Dogs, Grooming"/>
+			<meta name= "robots"     content= "index, flow"/>
+			<meta name= "viewport" 	 content= "user-scalable = no, width=device-width"/>
+
+			<link rel="stylesheet" href="css/style.css" type="text/css"/>
+
+
+			<title> Raven's Dog Grooming </title>
+		</head>
+
+
+			<body>
+
+				<h1> Raven's Dog Grooming Check In </h1>
+
+				
+					<nav>
+						<a href="#" id="clearData">Clear Stored Data</a>			
+						<a href="#" id="displayData">Display Data</a>
+						<a href="additem.html" id="addNew" style="display:none;">Add New Dog</a>
+					</nav>	
+
+					<ul id="errors"></ul>
+
+			<form action= "#" method= "post" id= "dogForm">
+				<fieldset>
+				<legend>Owner Information</legend>
+				
+
+				<ul>
+					<li><label for="firstName"> Owners First Name: </label><input type="text" id="firstName" placeholder= "John"/></li>
+					<li><label for="lastName"> Owners Last Name: </label><input type="text" id="lastName" placeholder= "Smith"/></li>
+					<li><label for="phoneNumber"> Owners Phone Number: </label><input type="text" id="phoneNumber" placeholder= "123-456-7890"/></li>
+					<li><label for="email"> Owners Email Address: </label><input type="text" id="email" placeholder= "email@gmail.com"/></li>
+
+				</ul>
+
+				</fieldset>
+
+				<fieldset>
+				<legend>Dog Information</legend>
+
+				<ul>
+
+					<li><label for="dogName">Your Dogs Name: </label><input type="text" id= "dogName" placeholder= "Rover"/></li>
+					<li id="dogBreeds"><label for="kind">What breed of dog do you have?</label></li>						
+
+					
+					<li><label> What gender is your dog? </label></li>
+						
+						<ul>
+							<li><input type="radio" id="sexValue" value="Male" name="sex" /><label for= "Yes">Male</label></li>
+							<li><input type="radio" id="sexValue" value="Female" name="sex" /><label for= "No">Female</label></li>
+						</ul>
+						
+					<li><label for="date">Appointment Date:</label><input id="date" type="date"/></li>
+					<li><div id="slider"><label>How many pounds does your dog weigh?</label>
+					
+					<label>0 Pounds</label><input id="slide" type="range" min="5" max="200" step="5" value="100"
+					onchange= "updateSlider(this.value)"/><label>200Pounds</label></div></li>
+					
+					<li><input type="checkbox" id="trim" value="Yes" class="checkbox" /><label for="trim">Check box to trim nails.</label></li>
+
+					<li><label for= "comments">Are there any special requests?</label>
+					<textarea id= "comments" placeholder= "Notes"></textarea><br></li>
+										
+				</ul>
+		
+				</fieldset>
+
+				<input type= "Button" value="Check In" id="checkIn"/>
+			</form>
+			<script type="text/javascript" src="js/JSON.js"></script>
+			<script type="text/javascript" src="js/main.js"></script>
+
+	   </body>
+	</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<!--Brenna Pavlinchak-->
+<!--VFW 1210-->
+<!--Project One-->
+<!--This is the first project for VFW I am making a form and the starting page-->
+
+<!--HTMLTAG-->
+
+	<html>
+		<head>
+			<meta charset= "utf-8"/>
+			<meta name="description" content= "Raven's Dog Grooming"/>
+			<meta name= "keywords" 	 content= "Raven, Dogs, Grooming"/>
+			<meta name= "robots"     content= "index, flow"/>
+			<meta name= "viewport" 	 content= "userscalable=no, width=device-width"/>
+			
+			
+			<title> Raven's Dog Grooming </title>
+		</head>
+			
+			
+		<body>
+		
+		<h1> Raven's Dog Grooming Check In </h1>
+		
+		<form action= "#" method= "post">
+			<fieldset>
+				<legand> Owner Information </legand>
+				
+				<ul>
+					
+					<li><label for= "ownersFirstName"> Owners First Name: </label><input type= "text" id= "ownersFirstName" placeholder= "John"/></li><br>
+					<li><label for= "ownersLastName"> Owners Last Name: </label><input type= "text" id= "ownersLastName" placeholder= "Smith"/></li><br>
+					<li><label for= "phoneNumber"> Owners Phone Number: </label><input type= "text" id= "phoneNumber" placeholder= "123-456-7890"/></li><br>
+					<li><label for= "email"> Owners Email Address: </label><input type= "text" id= "email" placeholder= "email@gmail.com"/></li>
+				
+				</ul>
+		
+				</fieldset><br>
+				
+				<fieldset>
+				<legand>Dog Information</legand>
+				
+				<ul>
+					
+					<li><label for= "dogsName">Your Dogs Name: </label><input type= "text" id= "dogsName" placeholder= "Rover"/></li><br>
+					<li><label for= "dogBreed"> What type of dog do you have? </label>
+					<select id= dogBreed">
+					<option value= "goldenRetriever"> Golden Retriever </option>
+					<option value= "standardPoodle"> Standard Poodle </option>
+					<option value= "greyHound"> Greyhound </option>
+					<option value= "greatDane"> Great Dane </option>
+					<option value= "miniaturePoodle"> Miniature Poodle </option>
+					<option value= "westHighlandTerrier"> West Highland Terrier </option>
+					<option value= "cairnTerrier"> Cairn Terrier </option>
+					<option value= "jackRussellTerrier"> Jack Russell Terrier </option>
+					<option value= "goldenDoodle"> GoldenDoodle </option></li>
+					</select><br>
+					
+					<br>
+					<li><label> What gender is your dog? </label><br>
+					<input type= "radio" checked value= "male" id="male" name= "sex"/><label for= "radio"> Male </label></li>
+					<input type= "radio" value= "female" id="female" name= "sex"/><label for= "radio"> Female </label></li><br>
+					<br>
+					
+					<li><label>When are you going to pick up your dog? (date and time):</label><br>
+					<input type="datetime-local" name="bdaytime"><input type="submit"><br>
+					
+					<br>
+					<li><div id="slider"><label>How many pounds does your dog weigh?</label><br>
+					<label>0 Pounds</label><input id="slide" type="range" min="0" max="200" step="5" value="100 onchange="updateSlider(this.value)"/><label>200 Pounds</label></div></li>
+					<br/>
+					
+					<li><label for= "comments">Are there any special requests?</label><br>
+					<textarea id= "comments" placeholder= "type here..."></textarea></li><br>
+				
+					
+		</form>
+			</fieldset>
+			
+			<input type= "submit" value= "Check In"/><br>
+			
+			<a href="#">Clear Stored Data</a><span><a href="#">Display Data</a></span>
+			
+		
+	   </body>
+	</html>
+			
+					
+					
+						
+					
+					
+					
+					
+			

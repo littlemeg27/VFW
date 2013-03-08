@@ -1,0 +1,68 @@
+/* 
+Brenna Pavlinchak
+VFW 1210
+Project 2
+11/4/2012 
+*/
+
+
+		html 
+		{
+		    background: #3b6fbc;
+		}
+
+
+		h1 
+		{
+		    background: -webkit-gradient(linear, left top, left bottom, from(#6e6e6e), to(#d8d8d8));
+		    text-align: center;
+		    color: #000000;
+		    font-size: 200%;
+		    padding: 2em;
+		    margin: -0.25em -0.75em 0.75em -0.75em;
+		}
+
+
+		body 
+		{
+		    font-family: "Arial Black", Gadget, sans-serif;
+		    margin: 0em auto; 
+		    padding: 2em;
+		    background: -webkit-gradient(linear, left top, left bottom, from(#3b6fbc), to(#FFFFFF));
+		    color: #000000;
+		    max-width: 40em;
+		    max-height: auto;
+		    line-height: 1.5em;
+		    margin-left: 10em;
+		}
+
+		fieldset 
+		{
+			color: #000000;
+			font-family: "Arial Black", Gadget, sans-serif;
+			background-color: #b6b6b6;
+			opacity: 1;
+			border-color: #white;
+			border-style: solid;
+			font-style: bold;
+			line-height: 20px;
+			width: 400px;
+			margin-bottom: 20px;
+			margin-top: 10px;
+		}
+		
+		a:link 
+		{
+			color: #0e00ff;
+		}
+		
+		a:hover 
+		{
+			color: #000000;
+		}
+		
+		a 
+		{
+			margin-right: 10px;
+		}
+		
